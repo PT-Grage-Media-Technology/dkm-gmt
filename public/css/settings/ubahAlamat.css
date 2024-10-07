@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    }
+
+    .container-alamat {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    position: relative;
+    }
+
+    .close-btn-alamat {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 4px;
+    }
+
+    button {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF904A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+    button:hover {
+    background-color: #FF904A;
+    }
+
+    button.cancel {
+    background-color: #f44336;
+    }
+
+    button.cancel:hover {
+    background-color: #da190b;
+    }
+
+
+    /* Hapus tanda panah di input number pada Webkit browser (Chrome, Safari, Edge) */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hapus tanda panah di input number pada Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Tambahkan gaya CSS untuk menyesuaikan tampilan input number */
+input[type=number] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container-alamat {
+    width: 90%; /* Menyesuaikan lebar untuk perangkat mobile */
+    max-width: 400px; /* Menetapkan lebar maksimum */
+    margin: 20px auto; /* Mengurangi margin pada perangkat kecil */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    position: relative;
+}
+
+.close-btn-alamat {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px; /* Menyediakan ukuran font yang cukup besar untuk di klik */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF904A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FF904A;
+}
+
+button.cancel {
+    background-color: #f44336;
+}
+
+button.cancel:hover {
+    background-color: #da190b;
+}
+
+/* Hapus tanda panah di input number pada Webkit browser (Chrome, Safari, Edge) */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hapus tanda panah di input number pada Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Tambahkan gaya CSS untuk menyesuaikan tampilan input number */
+input[type=number] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Media Query untuk perangkat dengan layar kecil */
+@media (max-width: 600px) {
+    .container-alamat {
+        width: 95%; /* Menyesuaikan lebar popup pada perangkat kecil */
+        padding: 15px; /* Mengurangi padding pada perangkat kecil */
+    }
+
+    .close-btn-alamat {
+        font-size: 20px; /* Mengurangi ukuran font untuk tombol tutup */
+    }
+}

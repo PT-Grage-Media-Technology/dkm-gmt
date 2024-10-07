@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+nav{
+ position: fixed;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 75px;
+ background: #D6EFD8;
+ box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+nav .navbar{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ height: 100%;
+ max-width: 90%;
+ background: #D6EFD8;
+ margin: auto;
+}
+nav .navbar .logo a{
+  color: #1A5319;
+  font-size: 27px;
+  font-weight: 600;
+  text-decoration: none;
+}
+nav .navbar .menu{
+  display: flex;
+}
+.navbar .menu li{
+  list-style: none;
+  margin: 0 15px;
+}
+.navbar .menu li a{
+  color: #1A5319;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+}
+section{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #96c7e8;
+  font-size: 70px;
+}
+#Home{
+  background: #fff;
+}
+#About{
+  background: #f2f2f2;
+}
+#Category{
+  background: #e6e6e6;
+}
+#Latest{
+  background: #fff;
+}
+#Contact{
+  background: #f2f2f2;
+}
+#Feedback{
+  background: #e6e6e6;
+}
+.button a{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: #2980b9;
+  padding: 7px 12px;;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+}
+/* style.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .centered-image {
+    text-align: center; /* Center image horizontally */
+  }
+  
+  .centered-image img {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 100%; /* Ensure image does not exceed container width */
+    max-height: 100%; /* Ensure image does not exceed container height */
+    
+  }
+  .section {
+    background-color: #D6EFD8;
+    padding: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 249px;
+    margin-left: 110px;
+    max-width: 1301px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    /margin-top: 20px; / Menggunakan 100vh untuk membuat konten berada di tengah halaman */
+}
+.section h2 {
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;/* Jarak bawah garis bawah */
+}
+.section p {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.6; /* Ukuran teks */
+}
+.list h3{
+    margin-left: 135px;
+}
+.product-list {
+  width: 100%; /* Adjust to full width */
+  display: flex;
+  justify-content: space-between; /* Distribute products evenly */
+  align-items: stretch;
+  padding: 20px;
+  flex-wrap: wrap; 
+}
+
+.product {
+  background-color: #1A5319;
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  width: 280px; /* Fixed width */
+  height: 338px; /* Fixed height */
+  display: flex;
+  flex-direction: column; /* Ensure contents are stacked vertically */
+  justify-content: space-between; /* Space out contents evenly */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 5px; 
+}
+
+.product img {
+  width: 100%; /* Full width of the product */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Ensure the image covers the product area */
+  border-radius: 8px 8px 0 0;/* Contoh: jika diperlukan, atur border radius */
+}
+.product h3 {
+    margin: 16px 0 8px;
+}
+
+.product p {
+    padding: 0 16px;
+}
+
+.product button a {
+  color: #1A5319;
+  text-decoration: none; /* Remove underline from links */
+}
+
+.product button a:hover {
+  color: #1A5319;
+}
+
+.product button {
+  background-color: #D6EFD8;
+  color: #1A5319;
+  border: none;
+  padding: 10px 20px;
+  margin: 16px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: center;
+}
+
+.product button:hover {
+  background-color: #c0e0be;
+}
+
+.text-with-icon a {
+  color: #D6EFD8;
+  text-decoration: none; /* Remove underline from links */
+}
+
+.text-with-icon a:hover {
+  color: #D6EFD8;
+}
+
+.text-with-icon {
+  background-color: #1A5319;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  border-radius: 5px;
+  width: 1301px;
+  margin-left: 120px;
+}
+
+.text-with-icon .icon {
+  margin-right: 8px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+  padding: 20px;
+  background-color: #D6EFD8;
+  color: #1A5319;
+  padding: 40px 0;
+}
+
+.footer h3 {
+  color: #1A5319;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  color: #1A5319;
+  margin-bottom: 10px;
+}
+
+.footer ul.social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer ul.social-icons li a {
+  color: #1A5319;
+  font-size: 24px;
+}
+
+.footer ul.social-icons li a:hover {
+  color: #c0e0be;
+}
+
+.footer hr {
+  border-top: 1px solid #1A5319;
+  margin: 20px 0;
+}
+
+.left-content, .center-content, .right-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px; /* Add margins to each section */
+  flex: 1; /* Allow sections to grow and fill space equally */
+}
+
+.left-content .location {
+  margin-bottom: 10px;
+}
+
+.location, .website, .email, .phone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.text {
+  font-size: 14px;
+}
+
+.right-content p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.dkm {
+  text-align: justify; /* Justify text alignment */
+}

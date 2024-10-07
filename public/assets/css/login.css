@@ -1,0 +1,73 @@
+/* CSS Umum */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.login-card {
+    background-color: rgba(255, 255, 255, 0.731) !important;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-card h2 {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+.btn {
+    border-radius: 20px;
+}
+
+/* CSS Responsif */
+@media (max-width: 768px) {
+    .login-card {
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .login-card h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .login-card .form-group p {
+        font-size: 14px;
+    }
+}
+
+/* Tambahkan padding di sekitar form jika diperlukan */
+@media (min-width: 992px) {
+    .container {
+        padding: 0 15px;
+    }
+}

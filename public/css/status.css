@@ -1,0 +1,43 @@
+
+
+
+        .status-box {
+            max-width: 300px; /* Lebar maksimum kotak status */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-right: 20px; /* Jarak dari tepi kanan */
+        }
+
+       
+
+        .status-box p {
+            margin-bottom: 0; /* Menghilangkan margin bawah pada teks status */
+        }
+
+        .table-container {
+            max-width: calc(100% - 340px); /* Lebar tabel dikurangi dengan lebar kotak status dan jarak */
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            text-align: center;
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        
+                

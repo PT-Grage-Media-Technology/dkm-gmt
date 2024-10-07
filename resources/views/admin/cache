@@ -1,0 +1,45 @@
+<thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Nama Penabung</th>
+                                    <th>Hewan yang Ditabung</th>
+                                    <th>Pembayaran Bulan Ini</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @php
+                                    $displayedUsersAndAnimals = [];
+                                @endphp
+                            
+                                @foreach($tabungan_inputs as $t)
+                                    @php
+                                        $userName = $t->user ? $t->user->nama_lengkap : 'Tidak Diketahui';
+                                        $animalName = $t->tabunganKur && $t->tabunganKur->produk ? $t->tabunganKur->produk->name : 'Tidak Diketahui';
+                                        $uniqueKey = $userName . '-' . $animalName; // Kombinasi unik nama pengguna dan nama hewan
+                                        
+                                        // Ambil total pembayaran bulan ini dari array yang dikirim dari controller
+                                        $totalPaymentsThisMonth = $payments[$uniqueKey] ?? 0;
+                            
+                                        // Cek apakah kombinasi ini sudah ditampilkan sebelumnya
+                                        if (in_array($uniqueKey, $displayedUsersAndAnimals)) {
+                                            continue; // Lewati iterasi jika kombinasi sudah ditampilkan
+                                        }
+                            
+                                        // Tambahkan kombinasi ini ke array yang melacak kombinasi yang sudah ditampilkan
+                                        $displayedUsersAndAnimals[] = $uniqueKey;
+                                    @endphp
+                            
+                                    <tr>
+                                        <td>{{ $loop->iteration }}</td>
+                                        <td>{{ $userName }}</td>
+                                        <td>{{ $animalName }}</td>
+                                        <td>{{ $totalPaymentsThisMonth }}</td> <!-- Menampilkan total pembayaran bulan ini -->
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3" style="text-align: right;"><strong>Total Keseluruhan Pembayaran Bulan Ini:</strong></td>
+                                    <td><strong>{{ $totalPaymentsOverall }}</strong></td>
+                                </tr>
+                            </tfoot>

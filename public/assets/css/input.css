@@ -1,0 +1,30 @@
+
+
+.bg-light-green {
+    background-color: #D6EFD8;
+}
+
+h4 {
+    font-weight: bold;
+    background-color: #4a684c;
+    padding: 10px;
+    margin: 0; /* Menghilangkan margin default */
+    width: 100vw; /* Menyeting lebar menjadi 100% dari viewport width */
+   color: #F9FAFA;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bg-light-green {
+    background-color: #D6EFD8;
+    padding: 50px;
+}
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 200%;
+    }
+}
+
+

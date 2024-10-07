@@ -1,0 +1,137 @@
+.form-container {
+        padding: 0 20px;
+    }
+
+    .close-btn-data {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+
+    .form-header {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .form-group {
+        margin-bottom: 3px;
+        width: 100%;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .edit-link {
+        display: flex;
+        align-items: center;
+        font-size: 1.2em;
+    }
+
+    .small-icon {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+    }
+
+    .small-input {
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    .profile-anggota {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-picture {
+        width: 150px; /* Sesuaikan ukuran sesuai kebutuhan */
+        height: 150px; /* Sesuaikan ukuran sesuai kebutuhan */
+        border-radius: 50%; /* Mengubah gambar menjadi bulat */
+        object-fit: cover; /* Memastikan gambar mengisi area bulat dengan baik */
+        margin-bottom: 10px; /* Margin bawah untuk menjaga jarak dengan judul */
+    }
+
+    .cImg{
+        border-radius: 50%;
+    }
+
+    .cImg img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%; /* Membuat gambar profil bulat */
+        object-fit: cover;
+    }
+
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 4px;
+    }
+
+    button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+    button:hover {
+    background-color: #45a049;
+    }
+
+    button.cancel {
+    background-color: #f44336;
+    }
+
+    button.cancel:hover {
+    background-color: #da190b;
+    }
+
+    /* Hapus tanda panah di input number pada Webkit browser (Chrome, Safari, Edge) */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hapus tanda panah di input number pada Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Tambahkan gaya CSS untuk menyesuaikan tampilan input number */
+input[type=number] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%;
+}
+

@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #F9FAFA;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    max-width: 850px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+}
+
+.right{
+	width: 500px;
+	background: #0587FF;
+	border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.register {
+	width: 430px;
+	display: flex;
+	flex-direction: column;
+}
+
+.register-heading {
+    display: flex;
+	justify-content: space-between;
+	text-align: right;
+    align-items: center; /* Tambahkan ini */
+}
+
+.register h3 {
+    margin-right: 10px;
+    margin-bottom: 0; /* Ubah margin-bottom menjadi 0 */
+}
+
+.already-have-account {
+	/* display: flex; */
+	align-items: center;
+	margin-top: 5px;
+}
+
+.batas{
+	width: 70px;
+	background: linear-gradient(to right, #0587FF, #FFFFFF);
+}
+
+form {
+    width: 250px;
+    margin: 60px auto;
+}
+
+h3 {
+    margin: 20px;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: center;
+    margin: 10px;
+}
+
+.judul1{
+	margin-top: 125px;
+	color: white;
+	text-align: left;
+	margin-left: 45px;
+}
+
+.right img{
+	max-width: 350px; /* Maksimum lebar gambar */
+    max-height: 400px; /* Maksimum tinggi gambar */
+    margin-top: 50px; /* Jarak di atas gambar */
+	margin-left: 35px;
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+input {
+    width: 100%;
+    margin: 2px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #F0EFF0;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+	font-size: 15px;
+}
+
+.buat-akun{
+    border: none;
+    outline: none;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    width: 200px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+	margin: auto;
+    margin-top: 30px;
+    border-radius: 8px;
+    background: linear-gradient(to right, #0493CC, #9FDCFF);
+
+}
+
+.or-line {
+    text-align: center;
+    border-top: 1px solid #ccc; /* Garis di atas */
+    line-height: 0.1em; /* Jarak vertikal yang minimal */
+    margin: 10px 0; /* Sesuaikan dengan kebutuhan */
+	margin-top: 30px;
+}
+
+.or-line span {
+    background-color: #fff; /* Warna latar belakang untuk menyembunyikan garis */
+    padding: 0 10px; /* Sesuaikan dengan kebutuhan */
+}
+
+
+button:hover {
+    background: #0493CC;
+}
+
+.google button{
+	background: #F0EFF0;
+	color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    padding: 8px;
+	width: 200px;
+    border-radius: 8px;
+    cursor: pointer;
+	margin: auto;
+	margin-top: 30px;
+	font-size: 15px;
+}
+
+.google button img {
+	width: 26px;
+	height: 26px;
+	margin-right: 5px;
+}
+

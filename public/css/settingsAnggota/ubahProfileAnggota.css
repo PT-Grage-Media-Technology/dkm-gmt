@@ -1,0 +1,99 @@
+.profilImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px; /* Contoh lebar maksimum 600px */
+    margin: 0 auto;
+}
+
+.userImg {
+    margin-bottom: 10px;
+}
+
+.profil-ubah{
+    border-radius: 50%;
+}
+
+.profil-ubah img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Membuat gambar profil bulat */
+    object-fit: cover;
+}
+
+/* .chooseImg {
+    margin-bottom: 10px;
+} */
+
+/* .warningChsImg {
+    margin-bottom: 10px;
+} */
+
+.buttonGroup {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px; /* Jarak antara tombol */
+}
+
+.buttonGroup button {
+    flex: 1;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Tombol "Pilih Profil" */
+.chooseButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chooseButton:hover {
+    background-color: #0056b3;
+}
+
+.chooseButton:active {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Tombol "Simpan" default */
+.buttonGroup button#saveButton {
+    background-color: green;
+    color: white;
+}
+
+.buttonGroup button#saveButton:hover {
+    background-color: #28a745;
+}
+
+.buttonGroup button#saveButton:active {
+    background-color: #218838;
+    color: white;
+}
+
+/* Tombol "Batal" */
+.buttonGroup button#cancelButton {
+    background-color: red;
+    color: white;
+}
+
+.buttonGroup button#cancelButton:hover {
+    background-color: #dc3545;
+}
+
+.buttonGroup button#cancelButton:active {
+    background-color: #c82333;
+    color: white;
+}
+
+/* Success message */
+#successMessage {
+    margin-top: 10px;
+    color: green;
+}

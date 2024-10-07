@@ -1,0 +1,50 @@
+.profile-and-form {
+    padding: 0; /* Menghapus padding agar form memanfaatkan seluruh ruang layar */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    min-height: 100vh; /* Menjaga form tetap di tengah */
+}
+
+.form-container {
+    width: 100%; /* Memastikan form menggunakan seluruh lebar layar */
+    max-width: 1500px; /* Atur lebar maksimal form */
+    padding: 0 20px;
+    box-sizing: border-box; /* Menghitung padding dalam lebar elemen */
+}
+
+.form-header-ubahPW h4 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Tambahkan jarak antar form field */
+}
+
+.input-pw {
+    width: 100%; /* Memastikan input memanfaatkan seluruh lebar kontainer */
+    padding: 12px; /* Sesuaikan padding agar input nyaman digunakan */
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; /* Menghitung padding dan border dalam lebar elemen */
+}
+
+/* .form-buttons {
+    text-align: right;
+    margin-top: 20px;
+} */
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Media query untuk layar lebih kecil */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 15px; /* Menyesuaikan padding untuk layar kecil */
+        max-width: 100%;
+    }
+}
