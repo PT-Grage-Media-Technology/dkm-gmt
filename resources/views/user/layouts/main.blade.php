@@ -63,7 +63,7 @@
                     </a>
                 @endif --}}
                 @if (auth()->user() == null)
-                    <a href="/login"
+                    <a href="/login-index"
                         class="md:block hidden py-3 bg-orange-400 text-white text-base px-5 rounded-full hover:bg-sky-500 transition duration-500">
                         Sign In
                     </a>
@@ -109,7 +109,7 @@
 
             </ul>
             @if (auth()->user() == null)
-                <a href="/login"
+                <a href="/login-index"
                     class="md:hidden py-3 bg-orange-400 text-white text-base px-5 text-center w-full rounded-full hover:bg-sky-500 transition duration-500">
                     Sign In
                 </a>
