@@ -218,7 +218,7 @@
                     @if ($setadusrset && $setadusrset->logo)
                         <img src="{{ asset('storage/' . $setadusrset->logo) }}" style="max-height: 47px; height: auto; width: auto;" alt="Logo">
                     @else
-                        <img src="{{ asset('assets/qurban.png') }}" style="max-height: 47px; height: auto; width: auto;" alt="Default Logo">
+                        <img src="{{ 'assets/qurban.png' }}" style="max-height: 47px; height: auto; width: auto;" alt="Default Logo">
                     @endif
                     <p style="color: white; margin-left: 3px; font-size: 13px; text-align: center;">
                         {{ $setadusrset && $setadusrset->nama ? $setadusrset->nama : 'Nama DKM' }}

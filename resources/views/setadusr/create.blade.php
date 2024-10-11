@@ -14,7 +14,7 @@
                 @if($setadusrset && $setadusrset->logo)
                     <img id="profileImage" src="{{ asset('storage/' . $setadusrset->logo . '?' . time()) }}" alt="Logo" class="img-profile" style="max-width: 150px; height: auto;">
                 @else
-                    <img id="current-profile-image" src="{{ asset('assets/qurban.png') }}" alt="Default Logo" class="profile-picture" style="max-width: 150px; height: auto;">
+                    <img id="current-profile-image" src="{{ 'assets/qurban.png' }}" alt="Default Logo" class="profile-picture" style="max-width: 150px; height: auto;">
                 @endif
                 <!-- Input file di bawah gambar -->
                 <div class="mt-3">

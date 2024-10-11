@@ -14,11 +14,6 @@ class DownloadController extends Controller
     public function downloadWord(Request $request)
     {
         // dd($request->all());
-<<<<<<< HEAD
-      
-=======
-
->>>>>>> 35ce871132669105c9fd8f577060d9538233fa3d
         // Mendapatkan ID pengguna yang sedang login
         $userId = Auth::id();
         $produkId = $request->query('produk_id');

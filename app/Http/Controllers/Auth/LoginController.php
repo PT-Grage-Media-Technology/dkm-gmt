@@ -21,7 +21,7 @@ class LoginController extends Controller
                 'username' => 'required',
                 'password' => 'required',
             ],
-            [
+            [ 
                 'username.required' => 'Username harus diisi',
                 'password.required' => 'Password harus diisi',
             ]

@@ -83,28 +83,16 @@
                         </div>
                     </div>
                     <div class="mt-4 flex space-x-2">
-<<<<<<< HEAD
-                        @if($item->bukti_pembayaran_invalid)
-=======
                         @if($item->buktiPembayarans)
->>>>>>> 35ce871132669105c9fd8f577060d9538233fa3d
                         <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-bell fa-fw"></i>
                         </a>
                         @endif
 
-<<<<<<< HEAD
-                        {{-- @if($item->sisa_bulan > 0) --}}
                         <!-- Show Upload button only if not "Bayar di Tempat" -->
                         @if($item->metode->jenis != 'Bayar di Tempat')
                             <a href="{{ route('transaksi.layouts', ['id' => $item->id]) }}" class="flex-1 py-2 px-2 w-auto bg-blue-500 text-white rounded text-center relative">Upload</a>
-                        {{-- @endif --}}
-=======
-                        <!-- Show Upload button only if not "Bayar di Tempat" -->
-                        @if($item->metode->jenis != 'Bayar di Tempat')
-                            <a href="{{ route('transaksi.layouts', ['id' => $item->id]) }}" class="flex-1 py-2 px-2 w-auto bg-blue-500 text-white rounded text-center relative">Upload</a>
->>>>>>> 35ce871132669105c9fd8f577060d9538233fa3d
                         @endif
                         <a href="{{ route('rincian.show', ['id' => $item->id]) }}" class="flex-1 py-2 px-2 w-auto bg-gray-200 text-blue-500 text-center rounded hover:bg-gray-300">Selengkapnya</a>
                     </div>
