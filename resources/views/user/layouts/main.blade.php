@@ -31,7 +31,7 @@
                 @endphp
                 @if ($setadusrset && $setadusrset->logo)
                     <img src="{{ asset('storage/' . $setadusrset->logo) }}" style="max-height: 47px; height: auto; width: auto;" alt="Logo">
-                @else 
+                @else
                     <img src="{{ 'assets/qurban.png' }}" style="max-height: 47px; height: auto; width: auto;" alt="Default Logo">
                 @endif
                 <p style="color: black; margin-left: 3px; font-size: 13px; text-align: center;">
@@ -63,7 +63,7 @@
                     </a>
                 @endif --}}
                 @if (auth()->user() == null)
-                    <a href="{{ route('login') }}"
+                    <a href="/login"
                         class="md:block hidden py-3 bg-orange-400 text-white text-base px-5 rounded-full hover:bg-sky-500 transition duration-500">
                         Sign In
                     </a>
@@ -109,7 +109,7 @@
 
             </ul>
             @if (auth()->user() == null)
-                <a href="{{ route('login') }}"
+                <a href="/login"
                     class="md:hidden py-3 bg-orange-400 text-white text-base px-5 text-center w-full rounded-full hover:bg-sky-500 transition duration-500">
                     Sign In
                 </a>
