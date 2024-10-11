@@ -43,7 +43,7 @@
                                 Menabung
                             </a>
                         </div>
-                        <img src="{{ asset('storage/'.$item->image)}}" alt=""
+                        <img src="{{ 'storage/'.$item->image }}" alt=""
                             class="w-full h-[220px] object-cover border-0 group-hover:border-4 border-sky-500 transition-all ease-in-out duration-500">
                     </div>
                     <div class="p-4">
