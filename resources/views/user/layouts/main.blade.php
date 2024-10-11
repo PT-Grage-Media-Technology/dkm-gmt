@@ -31,7 +31,7 @@
                 @endphp
                 @if ($setadusrset && $setadusrset->logo)
                     <img src="{{ asset('storage/' . $setadusrset->logo) }}" style="max-height: 47px; height: auto; width: auto;" alt="Logo">
-                @else
+                @else 
                     <img src="{{ 'assets/qurban.png' }}" style="max-height: 47px; height: auto; width: auto;" alt="Default Logo">
                 @endif
                 <p style="color: black; margin-left: 3px; font-size: 13px; text-align: center;">
