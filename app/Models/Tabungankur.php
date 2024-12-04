@@ -64,15 +64,6 @@ class Tabungankur extends Model
 // In your Tabungankur model
     public function buktiPembayarans()
     {
-<<<<<<< HEAD
-            return $this->hasMany(BuktiPembayaran::class, 'tabungankur_id');
-    }
-    
-    public function checkIfPaymentInvalid()
-    {
-        // Logika pengecekan apakah bukti pembayaran tidak valid
-        if ($this->bukti_pembayaran && $this->bukti_pembayaran->status == 'invalid') {
-=======
             return $this->hasMany(BuktiPembayaran::class, 'tabungankurs_id');
     }
 
@@ -89,15 +80,10 @@ class Tabungankur extends Model
     {
         // Logika pengecekan apakah bukti pembayaran tidak valid
         if ($this->buktiPembayarans()->where('status', 'invalid')->exists()) {
->>>>>>> 35ce871132669105c9fd8f577060d9538233fa3d
             return true;
         }
         return false;
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> 35ce871132669105c9fd8f577060d9538233fa3d
 
 }
 
