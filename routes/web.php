@@ -93,7 +93,7 @@ use App\Http\Controllers\DataPemasukanController;
 use Illuminate\Support\Facades\Artisan;
 
 
-// Route::domain('kurbanqu.online')->group(function () {
+Route::domain('https://kurbanqu.online/')->group(function () {
 
     Route::get('/admin/info/edit', [TabelGambarController::class, 'edit'])->name('info.edit');
     Route::put('/admin/info/update', [TabelGambarController::class, 'update'])->name('info.update');
@@ -444,5 +444,5 @@ use Illuminate\Support\Facades\Artisan;
     Route::get('/admin/historitabungan/download/{id}', [HistorytabunganController::class, 'downloadData'])->name('historitabungan.download');
 
     Route::get('/datapemasukan', [DataPemasukanController::class,'index'])->name('datapemasukan');
-// });
+});
 
