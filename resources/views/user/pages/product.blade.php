@@ -40,7 +40,7 @@
                             class="group-hover:opacity-100 transition-all ease-in-out duration-500 absolute opacity-0 bottom-8 justify-center flex w-full">
                             <a href="{{ route('tabungan.show', ['id' => $item->id]) }}"
                                 class="transition-all ease-in-out duration-500 shadow-2xl shadow-orange-400 hover:bg-orange-400 hover:text-white bg-sky-500 px-7 py-3 font-semibold rounded-full text-white text-base">
-                                Menabung
+                                Menabung123
                             </a>
                         </div>
                         <img src="{{ 'storage/'.$item->image }}" alt=""
