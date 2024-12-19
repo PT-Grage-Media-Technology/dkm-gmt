@@ -29,7 +29,7 @@
         </form>
         <a href="{{ route('notifikasi.rincian.history') }}" class="flex items-center justify-center space-x-2 py-2 px-4 bg-blue-400 hover:bg-blue-600 text-white rounded text-center">
             <i class="fas fa-history"></i> <!-- Ikon Font Awesome -->
-            <span>History</span>
+            <span>History123</span>
         </a>
     </div>
 
