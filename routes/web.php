@@ -93,7 +93,7 @@ use App\Http\Controllers\DataPemasukanController;
 use Illuminate\Support\Facades\Artisan;
 
 
-Route::domain('https://kurbanqu.online')->group(function () {
+Route::domain('')->group(function () {
 
     Route::get('/admin/info/edit', [TabelGambarController::class, 'edit'])->name('info.edit');
     Route::put('/admin/info/update', [TabelGambarController::class, 'update'])->name('info.update');
