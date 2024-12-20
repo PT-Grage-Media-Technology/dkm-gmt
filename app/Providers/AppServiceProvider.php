@@ -20,6 +20,9 @@ class AppServiceProvider extends ServiceProvider
         // View::composer('*', function ($view) {
         //     $view->with('setadurs', Setadurs::first());
         // });
+
+        URL::forceRootUrl(config('app.url'));
+        URL::forceScheme('https');
     }
 
     public function register()
